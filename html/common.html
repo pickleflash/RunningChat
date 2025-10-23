@@ -33,7 +33,9 @@
             <option>KT</option>
             <option>LG U+</option>
         </select>
-        <input type="range" min="0" max="100" value="50">
+        <input class="bar" type="range" min="0" max="100" step="5" value="50"
+            oninput="output.textContent = this.value+'+'">
+        <output id="output">50+</output>
     </div>
     <div class="group">
         <p>Common box:</p>

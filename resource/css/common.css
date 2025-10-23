@@ -74,6 +74,11 @@
     border: 1px solid #212121;
 }
 
+.bar {
+    width: 315px;
+    height: 8px;
+    accent-color: #90C1E7;
+}
 
 .box {
     width: 328px;
