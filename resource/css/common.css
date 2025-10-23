@@ -7,7 +7,6 @@
     padding: 10px;
 }
 
-
 .btn {
     display: flex;
     padding: 14px 0;
@@ -31,7 +30,6 @@
 .btn-small {
     width: 60px;
     height: 32px;
-    flex-shrink: 0;
 }
 
 .btn.white {
@@ -41,7 +39,6 @@
 
 
 .circle {
-    flex-shrink: 0;
     background: #90C1E7;
     border-radius: 100%;
 }
@@ -68,7 +65,6 @@
 .input {
     width: 328px;
     height: 48px;
-    flex-shrink: 0;
     background: #FAFAFA;
     border-radius: 7px;
     border: 1px solid #212121;
