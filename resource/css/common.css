@@ -73,3 +73,20 @@
     border-radius: 7px;
     border: 1px solid #212121;
 }
+
+
+.box {
+    width: 328px;
+    border-radius: 7px;
+}
+
+.box-fill {
+    height: 70px;
+    background: #90C1E7;
+}
+
+.box-empty {
+    height: 92px;
+    background: #FAFAFA;
+    border: 1px solid #212121;
+}
