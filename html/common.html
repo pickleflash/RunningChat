@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -9,38 +9,77 @@
 </head>
 
 <body>
-    <div class="group">
-        <p>Common Button:</p>
-        <button class="btn large">large</button>
-        <button class="btn large white">large-white</button>
-        <button class="btn middle">middle</button>
-        <button class="btn middle white">middle-white</button>
-        <button class="btn small">small</button>
-        <button class="btn small white">small-white</button>
+    <!-- 상단 고정바 -->
+    <div class="top-bar">Text </div>
+
+    <!-- 메인 콘텐츠 -->
+    <div class="content">
+        <div class="group">
+            <p>Common Button:</p>
+            <button class="btn large">large</button>
+            <button class="btn large white">large-white</button>
+            <button class="btn middle">middle</button>
+            <button class="btn middle white">middle-white</button>
+            <button class="btn small">small</button>
+            <button class="btn small white">small-white</button>
+        </div>
+
+        <div class="group">
+            <p>Common circle:</p>
+            <div class="circle large"><img src="../resource/image/Vector.png"></div>
+            <div class="circle middle"></div>
+            <div class="circle small"></div>
+        </div>
+
+        <div class="group">
+            <p>Common form:</p>
+            <input type="text" class="input" placeholder="input">
+            <select class="input">
+                <option>선택</option>
+                <option>SKT</option>
+                <option>KT</option>
+                <option>LG U+</option>
+            </select>
+
+            <input class="bar" type="range" min="0" max="100" step="5" value="50"
+                oninput="output.textContent = this.value+'+'">
+            <output id="output">50+</output>
+
+            <label class="switch">
+                <input type="checkbox" id="toggle" checked>
+                <span class="slider"></span>
+            </label>
+            <span id="status" class="status-text">공개 허용</span>
+        </div>
+
+        <div class="group">
+            <p>Common box:</p>
+            <div class="box fill"></div>
+            <div class="box empty"></div>
+            <div class="box arrow"><img src="../resource/image/arrow.png"></div>
+        </div>
     </div>
-    <div class="group">
-        <p>Common circle:</p>
-        <div class="circle large"><img src="../resource/image/Vector.png"></div>
-        <div class="circle middle"></div>
-        <div class="circle small"></div>
-    </div>
-    <div class="group">
-        <p>Common form:</p>
-        <input type="text" class="input" placeholder="input">
-        <select class="input">
-            <option>선택</option>
-            <option>SKT</option>
-            <option>KT</option>
-            <option>LG U+</option>
-        </select>
-        <input class="bar" type="range" min="0" max="100" step="5" value="50"
-            oninput="output.textContent = this.value+'+'">
-        <output id="output">50+</output>
-    </div>
-    <div class="group">
-        <p>Common box:</p>
-        <div class="box box-fill"></div>
-        <div class="box box-empty"></div>
+
+    <!-- 하단 네비게이션 바 -->
+    <nav class="bottom-nav">
+        <button class="active">
+            <img src="https://img.icons8.com/ios-filled/50/home.png" alt="홈">
+        </button>
+        <button>
+            <img src="https://img.icons8.com/ios/50/handshake.png" alt="연결">
+        </button>
+        <button>
+            <img src="https://img.icons8.com/ios/50/settings.png" alt="설정">
+        </button>
+        <button>
+            <img src="https://img.icons8.com/ios/50/speech-bubble.png" alt="채팅">
+        </button>
+        <button>
+            <img src="https://img.icons8.com/ios-filled/50/user.png" alt="프로필">
+        </button>
+    </nav>
+
+    <script src="../resource/css/js/toggle.js"></script>
 </body>
 
 </html>
