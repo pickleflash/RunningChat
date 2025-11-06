@@ -1,0 +1,28 @@
+.login-content {
+    width: 80%;
+    margin: 4rem auto 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.login-content p {
+    width: 100%;
+    padding-left: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 0.31rem;
+}
+
+.login-content .input,
+.login-content .btn {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.login-content .btn {
+    justify-content: center;
+}
