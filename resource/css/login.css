@@ -21,7 +21,6 @@
 }
 
 .login-content {
-    border-bottom: 1px solid #DDD;
     padding-bottom: 20px;
     margin-bottom: 20px;
     width: 100%;
@@ -54,6 +53,10 @@
     color: rgba(0, 140, 255, 0.60);
 }
 
+.social-content {
+    border-top: 1px solid #DDD;
+}
+
 .social-text {
     display: block;
     font-size: 14px;
@@ -68,7 +71,6 @@
     justify-content: center;
     gap: 2.75rem;
     margin-top: 0.69rem;
-    margin-bottom: 0.94rem;
 }
 
 .social-btn {
