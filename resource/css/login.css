@@ -1,0 +1,86 @@
+.circle.large {
+    margin: 0 auto;
+    margin-top: 7.38rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 2.12rem;
+    color: var(--text_color);
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 2.12rem;
+    color: #2C2C2CF8;
+    opacity: 0.7;
+}
+
+.login-content {
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-box {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin-top: 8.06rem;
+}
+
+.box-text {
+    font-size: 16px;
+    color: var(--text_color);
+}
+
+.login-text {
+    font-size: 16px;
+    color: var(--text_color);
+    opacity: 0.7;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.login-text a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(0, 140, 255, 0.60);
+}
+
+.social-text {
+    display: block;
+    font-size: 14px;
+    color: var(--text_color);
+    opacity: 0.7;
+    margin-top: 0.69rem;
+    text-align: center;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 2.75rem;
+    margin-top: 0.69rem;
+    margin-bottom: 0.94rem;
+}
+
+.social-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.social-login img {
+    width: 3.125rem;
+    height: 3.125rem;
+    display: block;
+    cursor: pointer;
+}
