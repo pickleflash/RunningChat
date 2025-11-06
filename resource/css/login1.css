@@ -1,44 +1,131 @@
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+
+:root {
+    --main_color: #90C1E7;
+    --bg_color: #FAFAFA;
+    --text_color: #212121;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--bg_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.login-wrapper {
+    width: 425px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+}
+
+/* 상단 로고 + 타이틀 */
+.login-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
 .circle.large {
-    margin: 0 auto;
-    margin-top: 7.38rem;
+    width: 228px;
+    height: 228px;
+    background: var(--main_color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle.large img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .title {
-    text-align: center;
     font-size: 40px;
     font-weight: 700;
-    margin-top: 2.12rem;
     color: var(--text_color);
+    margin-top: 1rem;
 }
 
 .subtitle {
-    text-align: center;
     font-size: 16px;
     font-weight: 400;
-    margin-top: 2.12rem;
     color: #2C2C2CF8;
     opacity: 0.7;
 }
 
-.login-content {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+/* 로그인 폼 */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    box-sizing: border-box;
+    gap: 1.2rem;
 }
 
-.login-box {
-    font-size: 16px;
+.form-group {
+    width: 100%;
+    text-align: left;
+}
+
+.form-group p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text_color);
+    padding-left: 10px;
+    margin-bottom: 0.3rem;
+}
+
+.input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid var(--text_color);
+    border-radius: 7px;
+    background: var(--bg_color);
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+.btn.large {
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+    background: var(--main_color);
+    color: var(--text_color);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 8.06rem;
 }
 
 .box-text {
-    font-size: 16px;
     color: var(--text_color);
 }
 
+/* 회원가입 텍스트 */
 .login-text {
     font-size: 16px;
     color: var(--text_color);
@@ -53,24 +140,27 @@
     color: rgba(0, 140, 255, 0.60);
 }
 
+/* 간편 로그인 */
 .social-content {
+    width: 100%;
     border-top: 1px solid #DDD;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
 }
 
 .social-text {
-    display: block;
     font-size: 14px;
     color: var(--text_color);
     opacity: 0.7;
-    margin-top: 0.69rem;
-    text-align: center;
 }
 
 .social-login {
     display: flex;
     justify-content: center;
     gap: 2.75rem;
-    margin-top: 0.69rem;
 }
 
 .social-btn {
@@ -84,5 +174,4 @@
     width: 3.125rem;
     height: 3.125rem;
     display: block;
-    cursor: pointer;
 }

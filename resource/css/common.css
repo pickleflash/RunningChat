@@ -1,6 +1,3 @@
-/* --------------------------------------- */
-/* 공통 레이아웃 구조 */
-/* --------------------------------------- */
 @import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
 
 :root {
@@ -10,28 +7,27 @@
     --text_color: #212121;
 }
 
-html {
-    width: 425px;
-    height: 800px;
-}
-
-body {
-    border: 2px solid #000;
-}
-
-p,
-a,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-div {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: 'Nanum Gothic', sans-serif;
 }
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--bg_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* --------------------------------------- */
 /* 상단 고정바 */
+/* --------------------------------------- */
 .top-bar {
     position: sticky;
     top: 0;
@@ -48,7 +44,9 @@ div {
     z-index: 100;
 }
 
+/* --------------------------------------- */
 /* 하단 네비게이션 바 */
+/* --------------------------------------- */
 .bottom-nav {
     position: sticky;
     bottom: 0;
@@ -85,21 +83,12 @@ div {
 .bottom-nav button.active img {
     opacity: 1;
     filter: none;
-    color: #297eff;
+    color: var(--sub_color);
 }
 
 /* --------------------------------------- */
-/* 공통 스타일 (PC 기준 고정값) */
+/* 버튼 (공통) */
 /* --------------------------------------- */
-.group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 20px;
-    border: 2px solid #000;
-    padding: 10px;
-}
-
 .btn {
     display: flex;
     justify-content: center;
@@ -108,9 +97,10 @@ div {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    color: var(--text_color);
+    font-weight: 600;
 }
 
-/* 버튼 크기별 */
 .btn.large {
     width: 20rem;
     height: 3rem;
@@ -131,7 +121,9 @@ div {
     border: 3px solid var(--main_color);
 }
 
+/* --------------------------------------- */
 /* 원형(circle) */
+/* --------------------------------------- */
 .circle {
     border-radius: 100%;
 }
@@ -164,7 +156,9 @@ div {
     display: block;
 }
 
-/* 입력창 / 막대 / 박스 */
+/* --------------------------------------- */
+/* 입력창 / 슬라이더 / 박스 */
+/* --------------------------------------- */
 .input {
     width: 20rem;
     height: 48px;
@@ -252,7 +246,7 @@ div {
 }
 
 input:checked+.slider {
-    background-color: #297eff;
+    background-color: var(--sub_color);
 }
 
 input:checked+.slider::before {
@@ -263,112 +257,4 @@ input:checked+.slider::before {
     font-weight: 500;
     font-size: 14px;
     min-width: 60px;
-}
-
-/* --------------------------------------- */
-/* 반응형: 모바일 화면 (768px 이하) */
-/* --------------------------------------- */
-@media (max-width: 768px) {
-    .top-bar {
-        height: 40px;
-        font-size: 14px;
-        padding: 0 8px;
-    }
-
-    .bottom-nav {
-        height: 50px;
-    }
-
-    .bottom-nav img {
-        width: 22px;
-        height: 22px;
-    }
-
-    .content {
-        margin-top: 40px;
-        margin-bottom: 50px;
-    }
-
-    .group {
-        margin: 10px;
-        gap: 8px;
-        padding: 8px;
-    }
-
-    .btn.large {
-        width: 90%;
-        max-width: 320px;
-        height: auto;
-        padding: 12px 0;
-        font-size: 14px;
-    }
-
-    .btn.middle {
-        width: 70%;
-        max-width: 180px;
-        height: auto;
-        padding: 10px 0;
-        font-size: 13px;
-    }
-
-    .btn.small {
-        width: 50%;
-        max-width: 80px;
-        height: auto;
-        padding: 8px 0;
-        font-size: 12px;
-    }
-
-    .circle.large {
-        width: 60vw;
-        height: 60vw;
-    }
-
-    .circle.middle {
-        width: 25vw;
-        height: 25vw;
-    }
-
-    .circle.small {
-        width: 15vw;
-        height: 15vw;
-    }
-
-    .input {
-        width: 90%;
-        max-width: 320px;
-        height: 44px;
-    }
-
-    .bar {
-        width: 85%;
-        max-width: 300px;
-    }
-
-    .box {
-        width: 90%;
-        max-width: 320px;
-    }
-
-    .box.fill {
-        height: 60px;
-    }
-
-    .box.empty {
-        height: 80px;
-    }
-
-    .switch {
-        width: 28px;
-        height: 16px;
-    }
-
-    .slider::before {
-        width: 12px;
-        height: 12px;
-    }
-
-    .status-text {
-        font-size: 13px;
-    }
 }

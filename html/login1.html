@@ -1,45 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login_1</title>
+    <title>Login 1</title>
     <link rel="stylesheet" href="../resource/css/login1.css">
-    <link rel="stylesheet" href="../resource/css/common.css">
 </head>
 
 <body>
-    <div class="circle large"><img src="../resource/image/Vector.png"></div>
-    <h1 class="title">달림</h1>
-    <p class="subtitle">산책으로 만나는 새로운 인연</p>
+    <div class="login-wrapper">
 
-    <div class="login-content">
-        <div class="login-box">
-            <button class="btn large"><span class="box-text">같이 걷기</span></button>
+        <!-- 상단 로고 영역 -->
+        <div class="login-header">
+            <div class="circle large">
+                <img src="../resource/image/Vector.png" alt="logo">
+            </div>
+            <h1 class="title">달림</h1>
+            <p class="subtitle">산책으로 만나는 새로운 인연</p>
         </div>
 
-        <div class="login-text">
-            <p>이미 계정이 있으신가요?
-                <a href="#">로그인</a>
-            </p>
+        <!-- 입력 폼 영역 -->
+        <div class="login-form">
+            <div class="form-group">
+                <p>아이디</p>
+                <input type="text" class="input" placeholder="아이디">
+            </div>
+
+            <div class="form-group">
+                <p>비밀번호</p>
+                <input type="password" class="input" placeholder="비밀번호">
+            </div>
+
+            <button class="btn large"><span class="box-text">로그인</span></button>
+            <p class="login-text">아직 계정이 없으신가요? <a href="#">회원가입</a></p>
         </div>
+
+        <!-- 간편 로그인 영역 -->
+        <div class="social-content">
+            <p class="social-text">간편 로그인</p>
+            <div class="social-login">
+                <button class="social-btn"><img src="../resource/image/logo/kakao_logo.png" alt="kakao"></button>
+                <button class="social-btn"><img src="../resource/image/logo/naver_logo.png" alt="naver"></button>
+                <button class="social-btn"><img src="../resource/image/logo/google_logo.png" alt="google"></button>
+            </div>
+        </div>
+
     </div>
-    <div class="social-content">
-        <div class="social-text">간편로그인</div>
-        <div class="social-login">
-            <button class="social-btn naver">
-                <img src="../resource/image/logo/naver_logo.png" alt="naver logo">
-            </button>
-            <button class="social-btn kakao">
-                <img src="../resource/image/logo/kakao_logo.png" alt="kakao logo">
-            </button>
-            <button class="social-btn google">
-                <img src="../resource/image/logo/google_logo.png" alt="google logo">
-            </button>
-        </div>
-    </div>
-
 </body>
 
 </html>
