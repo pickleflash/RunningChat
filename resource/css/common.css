@@ -19,10 +19,11 @@ body {
     width: 100%;
     height: 100%;
     background: var(--bg_color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    display: block;
+    justify-content: unset;
+    align-items: unset;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /* --------------------------------------- */
