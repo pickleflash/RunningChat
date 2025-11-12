@@ -1,0 +1,65 @@
+.profile-area {
+    position: relative;
+    width: 9.875rem;
+    height: 9.875rem;
+    margin: 2rem auto 2rem;
+}
+
+
+.user_icon {
+    width: 9.875rem;
+    height: 9.875rem;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.camera_icon {
+    position: absolute;
+    width: 3.4375rem;
+    height: 3.4375rem;
+    bottom: 0;
+    right: 0;
+}
+
+
+.nickname {
+    text-align: center;
+}
+
+.nickname::placeholder {
+    text-align: center;
+}
+
+.signin-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -------------------------------- */
+/* signin4.html 전용 스타일 덮어쓰기 */
+/* -------------------------------- */
+body.signin4 .signin-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    max-width: 360px;
+}
+
+body.signin4 .signin-header .title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text_color);
+    margin-bottom: 0.8rem;
+}
+
+body.signin4 .signin-header h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: rgba(33, 33, 33, 0.6);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resource/css/common.css">
+    <link rel="stylesheet" href="../resource/css/signin1.css">
+    <title>Sign In 1</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <a href="#" class="close-btn" id="closeBtn">
+            <img src="../resource/image/arrow_left.png" alt="뒤로가기">
+        </a>
+
+        <div class="signin-header">
+            <h1 class="title">개인정보를 입력해 주세요</h1>
+            <h2 class="subtext">이름, 전화번호, 이메일이 필요해요</h2>
+        </div>
+
+        <div class="signin-main">
+            <form class="signin-form">
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" placeholder="이름을 입력해 주세요">
+
+                <label for="carrier">통신사</label>
+                <select class="select">
+                    <option>선택</option>
+                    <option>SKT</option>
+                    <option>KT</option>
+                    <option>LG U+</option>
+                </select>
+
+                <label for="phone">전화번호</label>
+                <input type="tel" id="phone" name="phone" placeholder="010-0000-0000">
+
+                <label for="email">이메일</label>
+                <input type="email" id="email" name="email" placeholder="Email@Example.com">
+
+                <button type="submit" class="btn large">다음</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

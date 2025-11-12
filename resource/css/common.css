@@ -16,7 +16,7 @@
 
 html,
 body {
-    width: 100%;
+    width: 425px;
     height: 100%;
     background: var(--bg_color);
     display: block;
@@ -24,6 +24,18 @@ body {
     align-items: unset;
     overflow-y: auto;
     overflow-x: hidden;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 425px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 1.5rem;
+    box-sizing: border-box;
 }
 
 /* --------------------------------------- */
@@ -160,7 +172,8 @@ body {
 /* --------------------------------------- */
 /* 입력창 / 슬라이더 / 박스 */
 /* --------------------------------------- */
-.input {
+input,
+select {
     width: 20rem;
     height: 48px;
     background: var(--bg_color);
@@ -258,4 +271,26 @@ input:checked+.slider::before {
     font-weight: 500;
     font-size: 14px;
     min-width: 60px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 2rem;
+    left: 1.5rem;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn img {
+    width: auto;
+    height: 60%;
+    object-fit: contain;
+    display: block;
+}
+
+.close-btn img[src*="arrow_left.png"] {
+    transform: translateX(-2px);
 }
