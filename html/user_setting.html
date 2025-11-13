@@ -21,7 +21,41 @@
 
             <p class="subtext">이후 앱 설정에서 변경가능합니다</ㅔ>
         </div>
+        <div class="user_setting-body">
+            <div class="toggle">
+                <h3 class="setting_title">공개 설정</h3>
+                <label class="switch">
+                    <input type="checkbox" id="toggle" checked>
+                    <span class="slider"></span>
+                </label>
+                <span id="status" class="status-text">공개 허용</span>
+            </div>
+            <div class="selection">
+                <div>
+                    <h3 class="setting_title">반려동물 여부</h3>
+                    <select class="select">
+                        <option>반려동물 없음</option>
+                        <option>개</option>
+                        <option>고양이</option>
+                        <option>거북이</option>
+                        <option>흰 수리 부엉이</option>
+                    </select>
+                </div>
+                <div>
+                    <h3 class="setting_title">취미</h3>
+                    <select class="select">
+                        <option>선택</option>
+                        <option>운동</option>
+                        <option>독서</option>
+                        <option>여행</option>
+                        <option>음악 감상</option>
+                    </select>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
+<script src="../resource/js/toggle_public.js"></script>
 
 </html>
