@@ -5,6 +5,7 @@
     --sub_color: #008cff;
     --bg_color: #FAFAFA;
     --text_color: #212121;
+    --sub_text_color: rgba(33, 33, 33, 0.60);
 }
 
 * {

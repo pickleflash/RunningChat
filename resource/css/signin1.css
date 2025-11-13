@@ -1,8 +1,3 @@
-.wrapper {
-    justify-content: flex-start;
-    position: relative;
-}
-
 .signin-header {
     width: 100%;
     max-width: 360px;
@@ -15,13 +10,13 @@
     font-weight: 700;
     color: var(--text_color);
     margin-bottom: 0.3rem;
-    letter-spacing: 0.00175rem;
+    letter-spacing: 0.00 175rem;
 }
 
 .signin-header .subtext {
     font-size: 1.25rem;
     font-weight: 400;
-    color: rgba(33, 33, 33, 0.6);
+    color: var(--sub_text_color);
     letter-spacing: 0.00125rem;
 }
 
