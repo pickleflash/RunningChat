@@ -5,11 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main</title>
+    <link rel="stylesheet" href="../resource/css/common.css">
     <link rel="stylesheet" href="../resource/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../resource/js/toggle_sort.js"></script>
 </head>
 
 <body>
-
+    <div class="wrapper">
+        <div class="search_container">
+            <form action="/search" method="get">
+                <input type="search" id="search_input" name="search_query" placeholder="산책로 검색">
+                <button type="submit" class="search_button"><img src="../resource/image/search.png"
+                        alt="search" /></button>
+            </form>
+        </div>
+        <div class="map">
+            지도 영역
+        </div>
+        <div class="tabs">
+            <div class="sort_tabs">
+                <ul class="sort">
+                    <li><a href="" class="active">거리순</a></li>
+                    <li><a href="">인기순</a></li>
+                </ul>
+                <button type="button" class="sort_toggle_button"><img src="../resource/image/ArrowsDownUp.png"
+                        alt="ArrowsDownUp" /></button>
+            </div>
+            <div class="list_tabs">
+                <ul class="trail_list">
+                    <li class="trail_item">
+                        <h3>둘레길 1</h3>
+                        <span class="distance">길이 5km</span>
+                        <span class="duration">약 1시간</span>
+                        <span class="pets allowed">반려동물 가능</span>
+                    </li>
+                    <li class="trail_item">
+                        <h3>둘레길 2</h3>
+                        <span class="distance">길이 3km</span>
+                        <span class="duration">약 1시간 30분</span>
+                        <span class="pets not_allowed">반려동물 불가</span>
+                    </li>
+                    <li class="trail_item">
+                        <h3>둘레길 3</h3>
+                        <span class="distance">길이 7km</span>
+                        <span class="duration">약 2시간</span>
+                        <span class="pets allowed">반려동물 가능</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

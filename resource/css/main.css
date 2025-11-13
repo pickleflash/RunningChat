@@ -1,0 +1,96 @@
+.search_container {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search_input {
+    width: 80%;
+    border: none;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.search_button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.tabs {
+    width: 100%;
+}
+
+.sort_tabs {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sort {
+    display: flex;
+}
+
+.sort li {
+    margin-right: 10px;
+}
+
+.sort_toggle_button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.active {
+    font-weight: bold;
+    color: var(--sub_color)
+}
+
+.list_tabs {
+    width: 100%;
+}
+
+.trail_list {
+    list-style: none;
+    /* <ul>의 기본 점 제거 */
+    padding: 0;
+    margin: 0;
+}
+
+.trail_item {
+    background-color: var(--main_color);
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    color: var(--text_color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.trail_item h3 {
+    font-weight: 600;
+    margin: 0 0 8px 0;
+}
+
+.trail_item span {
+    font-size: 14px;
+    color: #333;
+}
+
+.trail_item span+span::before {
+    content: " · ";
+    margin: 0 3px;
+    color: var(--text_color);
+}
