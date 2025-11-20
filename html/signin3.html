@@ -25,6 +25,12 @@
             <div class="profile-area">
                 <img src="../resource/image/user_icon.png" alt="user_icon" class="user_icon">
                 <img src="../resource/image/camera_icon.png" alt="camera_icon" class="camera_icon">
+                <input type="file" id="profileImageInput" accept="image/*" style="display:none;">
+            </div>
+
+            <div id="imageModal" class="modal">
+                <span class="modal-close">&times;</span>
+                <img class="modal-content" id="modalImage">
             </div>
 
             <form class="signin-form">
@@ -33,6 +39,8 @@
             </form>
         </div>
     </div>
+    <script src="../resource/js/profile_image.js"></script>
+    <script src="../resource/js/close_back.js"></script>
 </body>
 
 </html>
