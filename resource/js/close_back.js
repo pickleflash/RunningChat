@@ -8,3 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+//<a href="#" class="close-btn" id="closeBtn">
+//<img src="../resource/image/arrow_left.png" alt="뒤로가기">
+//</a>
