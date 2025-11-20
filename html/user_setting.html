@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../resource/css/common.css">
     <link rel="stylesheet" href="../resource/css/user_setting.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!-- Flatpickr JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
     <title>User Setting</title>
 </head>
 
 <body>
     <div class="wrapper">
+
         <a href="#" class="close-btn" id="closeBtn">
             <img src="../resource/image/arrow_left.png" alt="뒤로가기">
         </a>
@@ -18,10 +24,79 @@
         <div class="user_setting-header">
             <h1 class="title">활동 시 사용자의<br> 정보가 필요해요</h1>
             <h2 class="subtitle">아래 항목들을 설정 해 주세요</h2>
-
-            <p class="subtext">이후 앱 설정에서 변경가능합니다</ㅔ>
+            <p class="subtext">이후 앱 설정에서 변경가능합니다</p>
         </div>
-    </div>
+
+        <div class="user_setting-body">
+
+            <div class="toggle">
+                <h3 class="setting_title">공개 설정</h3>
+                <label class="switch">
+                    <input type="checkbox" id="toggle" checked>
+                    <span class="slider"></span>
+                </label>
+                <span id="status" class="status-text">공개 허용</span>
+            </div>
+
+            <div class="selection">
+
+                <div class="item_div">
+                    <h3 class="setting_title">반려동물 여부</h3>
+                    <select class="select">
+                        <option>반려동물 없음</option>
+                        <option>개</option>
+                        <option>고양이</option>
+                        <option>거북이</option>
+                        <option>흰 수리 부엉이</option>
+                    </select>
+                </div>
+
+                <div class="item_div">
+                    <h3 class="setting_title">취미</h3>
+                    <select class="select">
+                        <option>선택</option>
+                        <option>운동</option>
+                        <option>독서</option>
+                        <option>여행</option>
+                        <option>음악 감상</option>
+                    </select>
+                    <input type="text" id="hobby_input" class="detail_input" placeholder="취미에 대한 자세한 내용을 작성해주세요.">
+                </div>
+
+                <div class="item_div">
+                    <h3 class="setting_title">관심사</h3>
+                    <select class="select">
+                        <option>선택</option>
+                        <option>패션</option>
+                        <option>테크</option>
+                        <option>요리</option>
+                        <option>게임</option>
+                    </select>
+                    <input type="text" id="interest_input" class="detail_input" placeholder="관심사에 대한 자세한 내용을 작성해주세요.">
+                </div>
+
+                <div class="item_div">
+                    <h3 class="setting_title">활동 시간대</h3>
+                    <input id="timePicker" class="input" type="text" placeholder="--:--">
+                </div>
+
+                <div class="item_div">
+                    <h3 class="setting_title">내 지역(구)</h3>
+                    <select id="region_select" class="select">
+                        <option value="">불러오는 중...</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <button class="btn large" id="completeBtn">확인</button>
+        </div>
 </body>
+
+<!-- JS 파일들 -->
+<script src="../resource/js/toggle_public.js"></script>
+<script src="../resource/js/detail_enable.js"></script>
+<script src="../resource/js/timepicker.js"></script>
+<script src="../resource/js/region_select.js"></script>
 
 </html>
