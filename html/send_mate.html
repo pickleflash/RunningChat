@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메이트 찾기 - 요청</title>
+    <link rel="stylesheet" href="../resource/css/common.css">
+    <link rel="stylesheet" href="../resource/css/send_mate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../resource/js/popup.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <a href="#" class="close_btn" id="closeBtn">
+                <img src="../resource/image/arrow_left.png" alt="뒤로가기">
+            </a>
+            <h1 class="page_title">메이트 찾기</h1>
+        </div>
+
+        <div class="mate_list">
+            <div class="mate_card">
+                <div class="mate_left">
+                    <div class="circle small mate_avatar"></div>
+                    <div class="mate_info">
+                        <div class="mate_name">abc</div>
+                        <div class="mate_meta">동작구 · 강아지</div>
+                        <div class="mate_score">평균 점수 88</div>
+                    </div>
+                </div>
+                <button class="mate_request_btn modal_action" id="mate1">요청</button>
+            </div>
+
+            <div class="mate_card">
+                <div class="mate_left">
+                    <div class="circle small mate_avatar"></div>
+                    <div class="mate_info">
+                        <div class="mate_name">def</div>
+                        <div class="mate_meta">동작구 · 강아지</div>
+                        <div class="mate_score">평균 점수 88</div>
+                    </div>
+                </div>
+                <button class="mate_request_btn modal_action" id="mate2">요청</button>
+            </div>
+
+            <div class="mate_card">
+                <div class="mate_left">
+                    <div class="circle small mate_avatar"></div>
+                    <div class="mate_info">
+                        <div class="mate_name">efg</div>
+                        <div class="mate_meta">동작구 · 연습</div>
+                        <div class="mate_score">평균 점수 88</div>
+                    </div>
+                </div>
+                <button class="mate_request_btn modal_action" id="mate3">요청</button>
+            </div>
+
+            <div class="mate_card">
+                <div class="mate_left">
+                    <div class="circle small mate_avatar"></div>
+                    <div class="mate_info">
+                        <div class="mate_name">hij</div>
+                        <div class="mate_meta">강북구 · 연습</div>
+                        <div class="mate_score">평균 점수 88</div>
+                    </div>
+                </div>
+                <button class="mate_request_btn modal_action" id="mate4">요청</button>
+            </div>
+
+            <div class="mate_card">
+                <div class="mate_left">
+                    <div class="circle small mate_avatar"></div>
+                    <div class="mate_info">
+                        <div class="mate_name">klm</div>
+                        <div class="mate_meta">성동구 · 연습</div>
+                        <div class="mate_score">평균 점수 88</div>
+                    </div>
+                </div>
+                <button class="mate_request_btn modal_action" id="mate5">요청</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mate 1 Modal -->
+    <div class="modal" name="mate1" style="display: none;">
+        <div class="modal_content mate_modal_content">
+            <h2 class="trail_name">abcd</h2>
+            <div class="trail_image_area mate_modal_image_area">
+                <div class="circle mate_modal_avatar"></div>
+                <p class="mate_modal_score">평균 점수 88</p>
+            </div>
+            <div class="trail_info">
+                <p class="trail_details">
+                    <span>활동: 러닝</span>
+                    <span>취미: 산책</span>
+                    <span>관심사: 야옹</span>
+                    <span>반려동물: 강아지</span>
+                    <span>선호 시간대: 저녁</span>
+                    <span>거리: 2.1km</span>
+                    <span>지역: 동작구</span>
+                </p>
+            </div>
+            <div class="mate_matching_question mate_modal_message">
+                <p>abcd님에게 한마디</p>
+                <textarea placeholder="상대방에게 하고싶은 말을 자유롭게 해보세요!"></textarea>
+            </div>
+            <div class="modal_buttons">
+                <button class="modal_btn_yes modal_bottom">요청</button>
+                <button class="modal_btn_no modal_bottom">닫기</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

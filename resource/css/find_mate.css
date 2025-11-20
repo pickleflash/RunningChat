@@ -1,0 +1,84 @@
+.wrapper {
+    padding-top: 2rem;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding: 0 1.5rem;
+}
+
+.close_btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.close_btn img {
+    width: auto;
+    height: 60%;
+    object-fit: contain;
+    display: block;
+}
+
+.page_title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text_color);
+    margin: 0;
+}
+
+.filter_container {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    padding: 0 1.5rem;
+}
+
+.item_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.setting_title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text_color);
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.select:hover {
+    border-color: var(--main_color);
+}
+
+.select:focus {
+    border-color: var(--sub_color);
+}
+
+.select option {
+    padding: 10px;
+    font-size: 1rem;
+    color: var(--text_color);
+}
+
+.bar {
+    width: 100%;
+    height: 8px;
+    accent-color: var(--main_color);
+}

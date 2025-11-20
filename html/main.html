@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../resource/css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../resource/js/toggle_sort.js"></script>
+    <script src="../resource/js/popup.js"></script>
 </head>
 
 <body>
@@ -34,25 +35,100 @@
             </div>
             <div class="list_tabs">
                 <ul class="trail_list">
-                    <li class="trail_item">
+                    <li class="trail_item modal_action" id="trail1">
                         <h3>둘레길 1</h3>
                         <span class="distance">길이 5km</span>
                         <span class="duration">약 1시간</span>
                         <span class="pets allowed">반려동물 가능</span>
                     </li>
-                    <li class="trail_item">
+                    <li class="trail_item modal_action" id="trail2">
                         <h3>둘레길 2</h3>
                         <span class="distance">길이 3km</span>
                         <span class="duration">약 1시간 30분</span>
                         <span class="pets not_allowed">반려동물 불가</span>
                     </li>
-                    <li class="trail_item">
+                    <li class="trail_item modal_action" id="trail3">
                         <h3>둘레길 3</h3>
                         <span class="distance">길이 7km</span>
                         <span class="duration">약 2시간</span>
                         <span class="pets allowed">반려동물 가능</span>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Trail 1 -->
+    <div class="modal" name="trail1" style="display: none;">
+        <div class="modal_content">
+            <h2 class="trail_name">둘레길 1</h2>
+            <div class="trail_image_area">
+                <p>길 사진 정보 영역</p>
+            </div>
+            <div class="trail_info">
+                <p class="trail_location">위치: 서울시 강남구 역삼동 123-45</p>
+                <p class="trail_details">
+                    <span class="trail_length">길이: 5km</span>
+                    <span class="trail_duration">소요 시간: 약 1시간</span>
+                    <span class="trail_pets">반려동물 동반 가능</span>
+                </p>
+            </div>
+            <div class="mate_matching_question">
+                <p>이곳을 기준으로 메이트를 매칭 할까요?</p>
+            </div>
+            <div class="modal_buttons">
+                <button class="modal_btn_yes">예</button>
+                <button class="modal_btn_no">아니요</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Trail 2 -->
+    <div class="modal" name="trail2" style="display: none;">
+        <div class="modal_content">
+            <h2 class="trail_name">둘레길 2</h2>
+            <div class="trail_image_area">
+                <p>길 사진 정보 영역</p>
+            </div>
+            <div class="trail_info">
+                <p class="trail_location">위치: 서울시 서초구 서초동 456-78</p>
+                <p class="trail_details">
+                    <span class="trail_length">길이: 3km</span>
+                    <span class="trail_duration">소요 시간: 약 1시간 30분</span>
+                    <span class="trail_pets">반려동물 동반 불가</span>
+                </p>
+            </div>
+            <div class="mate_matching_question">
+                <p>이곳을 기준으로 메이트를 매칭 할까요?</p>
+            </div>
+            <div class="modal_buttons">
+                <button class="modal_btn_yes">예</button>
+                <button class="modal_btn_no">아니요</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Trail 3 -->
+    <div class="modal" name="trail3" style="display: none;">
+        <div class="modal_content">
+            <h2 class="trail_name">둘레길 3</h2>
+            <div class="trail_image_area">
+                <p>길 사진 정보 영역</p>
+            </div>
+            <div class="trail_info">
+                <p class="trail_location">위치: 서울시 송파구 잠실동 789-12</p>
+                <p class="trail_details">
+                    <span class="trail_length">길이: 7km</span>
+                    <span class="trail_duration">소요 시간: 약 2시간</span>
+                    <span class="trail_pets">반려동물 동반 가능</span>
+                </p>
+            </div>
+            <div class="mate_matching_question">
+                <p>이곳을 기준으로 메이트를 매칭 할까요?</p>
+            </div>
+            <div class="modal_buttons">
+                <button class="modal_btn_yes">예</button>
+                <button class="modal_btn_no">아니요</button>
             </div>
         </div>
     </div>
